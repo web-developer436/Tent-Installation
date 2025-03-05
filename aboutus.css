@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: black; /* پس منظر کالا */
+    display: flex;
+    justify-content: center; /* سینٹر میں لانا */
+    align-items: center;
+    height: 60px; /* نیویگیشن بار کی اونچائی */
+}
+
+.navbar h2 {
+    color: white; /* ٹیکسٹ سفید */
+    font-size: 24px;
+}
+.about-title {
+    margin: 50px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.about-container {
+    padding: 20px;
+}
+.about-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.about-card:hover {
+    transform: scale(1.05);
+}
+.about-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about-card p {
+    font-size: 1rem;
+    color: #555;
+}
+.about-description {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+.about-description p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.6;
+}

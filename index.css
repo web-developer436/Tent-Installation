@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: larger;
+}
+
+
+/* Navbar ko fixed aur responsive banane ke liye */
+.navbar {
+    background: rgba(0, 0, 0, 0.8); /* Dark Transparent Background */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Brand Styling */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+/* Navbar Links Centered */
+.navbar-nav {
+    margin: auto;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+/* Small screens pe bhi links dikhane ke liye */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: none !important; /* Toggle button ko hide kar diya */
+    }
+
+    .navbar-collapse {
+        display: block !important; /* Small screens pe bhi menu visible rahe */
+    }
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/* Background Image ke text ke liye */
+.header-content {
+    padding-top: 80px; /* Navbar ke liye space leave karein */
+}
+
+
+/* Background Image with Blur */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('one.jpeg'); /* Apni image ka path yahan dalen */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+
+    filter: brightness(50%) contrast(120%) blur(8px);
+
+
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.paragraph {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.paragraph.show {
+    opacity: 1;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 14px;
+    }
+
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
